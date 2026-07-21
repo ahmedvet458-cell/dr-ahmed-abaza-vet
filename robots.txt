@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ahmedvet458-cell.github.io/dr-ahmed-abaza-vet/sitemap.xml
