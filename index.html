@@ -4,272 +4,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>د. أحمد أباظة | استشارات بيطرية أونلاين</title>
-    <meta name="description" content="استشارات بيطرية احترافية عن بُعد لمربي الحيوانات الأليفة - د. أحمد أباظة. تشخيص، نصائح تغذية، متابعة حالات.">
-    <meta name="keywords" content="طبيب بيطري, استشارات بيطرية, حيوانات أليفة, دكتور بيطري اونلاين, عيادة بيطرية, قطط, كلاب">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="description" content="استشارات بيطرية احترافية عن بُعد - د. أحمد أباظة. خصم 50% على أول استشارة. تشخيص، علاج، تغذية، إنستا باي.">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        'arabic': ['Cairo', 'sans-serif'],
-                        'body': ['Inter', 'Cairo', 'sans-serif'],
-                    },
-                    colors: {
-                        'vet': {
-                            50: '#ecfdf5',
-                            100: '#d1fae5',
-                            200: '#a7f3d0',
-                            300: '#6ee7b7',
-                            400: '#34d399',
-                            500: '#10b981',
-                            600: '#059669',
-                            700: '#047857',
-                            800: '#065f46',
-                            900: '#064e3b',
-                        },
-                        'gold': {
-                            400: '#fbbf24',
-                            500: '#f59e0b',
-                            600: '#d97706',
-                        }
-                    },
-                    animation: {
-                        'float': 'float 6s ease-in-out infinite',
-                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-                    },
-                    keyframes: {
-                        float: {
-                            '0%, 100%': { transform: 'translateY(0px)' },
-                            '50%': { transform: 'translateY(-20px)' },
-                        }
-                    }
-                }
-            }
-        }
-    </script>
+    <script>tailwind.config={theme:{extend:{colors:{vet:{50:'#ecfdf5',100:'#d1fae5',200:'#a7f3d0',300:'#6ee7b7',400:'#34d399',500:'#10b981',600:'#059669',700:'#047857',800:'#065f46',900:'#064e3b'},gold:{400:'#fbbf24',500:'#f59e0b',600:'#d97706'}}}}} </script>
     <style>
-        * { scroll-behavior: smooth; }
-        body { font-family: 'Cairo', 'Inter', sans-serif; }
-        
-        .lang-en { direction: ltr; text-align: left; }
-        .lang-en .ar-only { display: none !important; }
-        .lang-en .en-only { display: block !important; }
-        html[dir="rtl"] .en-only { display: none !important; }
-        html[dir="ltr"] .ar-only { display: none !important; }
-        
-        .glass { 
-            background: rgba(255,255,255,0.85); 
-            backdrop-filter: blur(20px); 
-            -webkit-backdrop-filter: blur(20px);
-        }
-        
-        .hero-gradient {
-            background: linear-gradient(135deg, #064e3b 0%, #047857 30%, #059669 60%, #34d399 100%);
-        }
-        
-        .card-hover {
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        .card-hover:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 25px 50px -12px rgba(0,0,0,0.15);
-        }
-        
-        .payment-glow {
-            box-shadow: 0 0 30px rgba(5, 150, 105, 0.15);
-        }
-        
-        .pulse-dot {
-            animation: pulse-dot 2s infinite;
-        }
-        @keyframes pulse-dot {
-            0%, 100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.6); }
-            50% { box-shadow: 0 0 0 15px rgba(16, 185, 129, 0); }
-        }
-        
-        .section-divider {
-            height: 4px;
-            background: linear-gradient(90deg, #059669, #34d399, #6ee7b7);
-            width: 80px;
-            border-radius: 2px;
-            margin: 0 auto;
-        }
-
-        .price-badge {
-            position: absolute;
-            top: -14px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: #f59e0b;
-            color: white;
-            padding: 4px 16px;
-            border-radius: 20px;
-            font-weight: 700;
-            font-size: 14px;
-            white-space: nowrap;
-        }
-
-        /* RTL fixes for Font Awesome */
-        html[dir="rtl"] .fa-arrow-right { transform: rotate(180deg); }
-        html[dir="ltr"] .fa-arrow-left-long { display: none; }
-        html[dir="rtl"] .fa-arrow-right-long { display: none; }
+        *{scroll-behavior:smooth}body{font-family:'Cairo','Inter',sans-serif}html[dir="rtl"] .en-only{display:none!important}html[dir="ltr"] .ar-only{display:none!important}.glass{background:rgba(255,255,255,.85);backdrop-filter:blur(20px)}.hero-gradient{background:linear-gradient(135deg,#064e3b 0%,#047857 30%,#059669 60%,#34d399 100%)}.card-hover{transition:all .4s}.card-hover:hover{transform:translateY(-8px);box-shadow:0 20px 40px rgba(0,0,0,.12)}.section-divider{height:4px;background:linear-gradient(90deg,#059669,#34d399,#6ee7b7);width:80px;border-radius:2px;margin:0 auto}.price-badge{position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:#f59e0b;color:#fff;padding:4px 18px;border-radius:20px;font-weight:700;font-size:14px}.whatsapp-float{position:fixed;bottom:24px;left:24px;z-index:9999}.whatsapp-float a{display:flex;align-items:center;justify-content:center;width:62px;height:62px;background:#25D366;color:#fff;border-radius:50%;font-size:32px;box-shadow:0 8px 30px rgba(37,211,102,.5);transition:all .3s;animation:bounce 2s infinite}.discount-banner{background:linear-gradient(135deg,#f59e0b,#ef4444)}.stat-number{font-size:2.5rem;font-weight:900;background:linear-gradient(135deg,#059669,#34d399);-webkit-background-clip:text;-webkit-text-fill-color:transparent}.testimonial-card:hover{transform:scale(1.03)}.gallery-img{transition:all .4s;border-radius:16px}.gallery-img:hover{transform:scale(1.05);box-shadow:0 20px 40px rgba(0,0,0,.2)}@keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}@keyframes pulse-slow{0%,100%{opacity:1}50%{opacity:.85}}
     </style>
 </head>
 <body class="bg-white text-gray-800">
 
-<!-- ============ NAVBAR ============ -->
-<nav class="fixed top-0 left-0 right-0 z-50 glass border-b border-vet-100 transition-all duration-300" id="navbar">
+<!-- NAVBAR -->
+<nav class="fixed top-0 left-0 right-0 z-50 glass border-b border-vet-100" id="navbar">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between h-16 lg:h-20">
-            <!-- Logo -->
             <div class="flex items-center gap-3">
-                <div class="w-10 h-10 lg:w-12 lg:h-12 bg-vet-600 rounded-xl flex items-center justify-center text-white font-bold text-xl shadow-lg">
-                    🐾
-                </div>
+                <span class="text-3xl">🐾</span>
                 <div>
                     <span class="font-extrabold text-lg lg:text-xl text-vet-800">د. أحمد أباظة</span>
-                    <span class="block text-xs text-vet-500 font-semibold ar-only">استشارات بيطرية</span>
-                    <span class="block text-xs text-vet-500 font-semibold en-only hidden">Vet Consultations</span>
                 </div>
             </div>
-            
-            <!-- Desktop Nav -->
-            <div class="hidden lg:flex items-center gap-8">
-                <a href="#home" class="nav-link text-gray-700 hover:text-vet-600 font-semibold transition-colors ar-only">الرئيسية</a>
-                <a href="#home" class="nav-link text-gray-700 hover:text-vet-600 font-semibold transition-colors en-only hidden">Home</a>
-                <a href="#services" class="nav-link text-gray-700 hover:text-vet-600 font-semibold transition-colors ar-only">الخدمات</a>
-                <a href="#services" class="nav-link text-gray-700 hover:text-vet-600 font-semibold transition-colors en-only hidden">Services</a>
-                <a href="#payment" class="nav-link text-gray-700 hover:text-vet-600 font-semibold transition-colors ar-only">الدفع</a>
-                <a href="#payment" class="nav-link text-gray-700 hover:text-vet-600 font-semibold transition-colors en-only hidden">Payment</a>
-                <a href="#contact" class="nav-link text-gray-700 hover:text-vet-600 font-semibold transition-colors ar-only">تواصل</a>
-                <a href="#contact" class="nav-link text-gray-700 hover:text-vet-600 font-semibold transition-colors en-only hidden">Contact</a>
-                <button onclick="toggleLang()" class="flex items-center gap-2 px-4 py-2 bg-vet-50 text-vet-700 rounded-full font-bold hover:bg-vet-100 transition-all text-sm border border-vet-200">
-                    <i class="fa-solid fa-globe"></i>
-                    <span id="lang-label">English</span>
-                </button>
+            <div class="hidden lg:flex items-center gap-6">
+                <a href="#home" class="text-gray-700 hover:text-vet-600 font-semibold ar-only">الرئيسية</a><a href="#home" class="text-gray-700 hover:text-vet-600 font-semibold en-only">Home</a>
+                <a href="#stats" class="text-gray-700 hover:text-vet-600 font-semibold ar-only">عن الدكتور</a><a href="#stats" class="text-gray-700 hover:text-vet-600 font-semibold en-only">About</a>
+                <a href="#services" class="text-gray-700 hover:text-vet-600 font-semibold ar-only">الخدمات</a><a href="#services" class="text-gray-700 hover:text-vet-600 font-semibold en-only">Services</a>
+                <a href="#gallery" class="text-gray-700 hover:text-vet-600 font-semibold ar-only">معرض الصور</a><a href="#gallery" class="text-gray-700 hover:text-vet-600 font-semibold en-only">Gallery</a>
+                <a href="#payment" class="text-gray-700 hover:text-vet-600 font-semibold ar-only">الدفع</a><a href="#payment" class="text-gray-700 hover:text-vet-600 font-semibold en-only">Payment</a>
+                <a href="#contact" class="text-gray-700 hover:text-vet-600 font-semibold ar-only">تواصل</a><a href="#contact" class="text-gray-700 hover:text-vet-600 font-semibold en-only">Contact</a>
+                <button onclick="toggleLang()" class="flex items-center gap-2 px-4 py-2 bg-vet-50 text-vet-700 rounded-full font-bold hover:bg-vet-100 text-sm"><i class="fa-solid fa-globe"></i><span id="lang-label">English</span></button>
             </div>
-
-            <!-- Mobile menu button -->
-            <button onclick="toggleMobile()" class="lg:hidden text-vet-700 text-2xl">
-                <i class="fa-solid fa-bars"></i>
-            </button>
+            <button onclick="toggleMobile()" class="lg:hidden text-vet-700 text-2xl"><i class="fa-solid fa-bars"></i></button>
         </div>
     </div>
-    <!-- Mobile menu -->
     <div id="mobile-menu" class="hidden lg:hidden glass border-t border-vet-100">
         <div class="px-4 py-4 space-y-3">
-            <a href="#home" onclick="toggleMobile()" class="block py-2 text-gray-700 font-semibold ar-only">الرئيسية</a>
-            <a href="#home" onclick="toggleMobile()" class="block py-2 text-gray-700 font-semibold en-only hidden">Home</a>
-            <a href="#services" onclick="toggleMobile()" class="block py-2 text-gray-700 font-semibold ar-only">الخدمات</a>
-            <a href="#services" onclick="toggleMobile()" class="block py-2 text-gray-700 font-semibold en-only hidden">Services</a>
-            <a href="#payment" onclick="toggleMobile()" class="block py-2 text-gray-700 font-semibold ar-only">الدفع</a>
-            <a href="#payment" onclick="toggleMobile()" class="block py-2 text-gray-700 font-semibold en-only hidden">Payment</a>
-            <a href="#contact" onclick="toggleMobile()" class="block py-2 text-gray-700 font-semibold ar-only">تواصل</a>
-            <a href="#contact" onclick="toggleMobile()" class="block py-2 text-gray-700 font-semibold en-only hidden">Contact</a>
-            <button onclick="toggleLang()" class="w-full text-center py-2 bg-vet-50 text-vet-700 rounded-full font-bold hover:bg-vet-100 transition-all text-sm border border-vet-200">
-                <i class="fa-solid fa-globe ml-2"></i><span id="lang-label-mob">English</span>
-            </button>
+            <a href="#home" onclick="toggleMobile()" class="block py-2 text-gray-700 font-semibold ar-only">الرئيسية</a><a href="#home" onclick="toggleMobile()" class="block py-2 text-gray-700 font-semibold en-only">Home</a>
+            <a href="#gallery" onclick="toggleMobile()" class="block py-2 text-gray-700 font-semibold ar-only">معرض الصور</a><a href="#gallery" onclick="toggleMobile()" class="block py-2 text-gray-700 font-semibold en-only">Gallery</a>
+            <button onclick="toggleLang()" class="w-full text-center py-2 bg-vet-50 text-vet-700 rounded-full font-bold text-sm"><i class="fa-solid fa-globe ml-2"></i><span id="lang-label-mob">English</span></button>
         </div>
     </div>
 </nav>
 
-<!-- ============ HERO ============ -->
+<!-- HERO -->
 <section id="home" class="hero-gradient min-h-screen flex items-center relative overflow-hidden pt-20">
-    <!-- Background decorations -->
-    <div class="absolute top-20 right-10 text-8xl opacity-10 animate-float">🐕</div>
-    <div class="absolute bottom-20 left-10 text-7xl opacity-10 animate-float" style="animation-delay: 2s">🐈</div>
-    <div class="absolute top-1/3 left-1/4 text-6xl opacity-10 animate-float" style="animation-delay: 4s">🐾</div>
-    
-    <!-- Decorative circles -->
-    <div class="absolute top-10 left-10 w-64 h-64 bg-vet-400/10 rounded-full blur-3xl"></div>
-    <div class="absolute bottom-10 right-10 w-80 h-80 bg-vet-300/10 rounded-full blur-3xl"></div>
-    
+    <div class="absolute top-20 right-10 text-8xl opacity-10" style="animation: float 6s ease-in-out infinite">🐕</div>
+    <div class="absolute bottom-20 left-10 text-7xl opacity-10" style="animation: float 6s ease-in-out 2s infinite">🐈</div>
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10">
         <div class="grid lg:grid-cols-2 gap-12 items-center">
-            <!-- Text -->
             <div class="text-white text-center lg:text-right">
                 <div class="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full text-sm mb-6 border border-white/20">
-                    <span class="w-3 h-3 bg-green-400 rounded-full pulse-dot"></span>
-                    <span class="ar-only">متاح للاستشارات الآن</span>
-                    <span class="en-only hidden">Available for consultations</span>
+                    <span class="w-3 h-3 bg-green-400 rounded-full" style="animation: pulse 2s infinite"></span>
+                    <span class="ar-only">متاح للاستشارات الآن</span><span class="en-only">Available now</span>
                 </div>
-                
                 <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
-                    <span class="ar-only">استشارات بيطرية<br>من منزلك</span>
-                    <span class="en-only hidden">Veterinary<br>Consultations Online</span>
+                    <span class="ar-only">استشارات بيطرية<br>من منزلك</span><span class="en-only">Online Veterinary<br>Consultations</span>
                 </h1>
-                
                 <p class="text-lg sm:text-xl text-white/80 mb-8 leading-relaxed max-w-xl mx-auto lg:mr-0">
-                    <span class="ar-only">د. أحمد أباظة — طبيب بيطري مختص. استشرني في صحة حيوانك الأليف من أي مكان عبر الهاتف أو الفيديو. تشخيص، علاج، تغذية، ورعاية شاملة.</span>
-                    <span class="en-only hidden">Dr. Ahmed Abaza — Professional Veterinarian. Consult me about your pet's health from anywhere via phone or video. Diagnosis, treatment, nutrition & complete care.</span>
+                    <span class="ar-only">د. أحمد أباظة — طبيب بيطري مختص. استشرني في صحة حيوانك الأليف من أي مكان. تشخيص، علاج، تغذية، ورعاية شاملة.</span>
+                    <span class="en-only">Dr. Ahmed Abaza — Professional Veterinarian. Consult me about your pet's health from anywhere. Diagnosis, treatment, nutrition & complete care.</span>
                 </p>
-                
                 <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                    <a href="https://wa.me/201210254572" target="_blank" class="bg-green-500 hover:bg-green-400 text-white font-bold px-8 py-4 rounded-2xl text-lg transition-all transform hover:scale-105 shadow-2xl flex items-center justify-center gap-3">
+                    <a href="https://wa.me/201210254572" class="bg-green-500 hover:bg-green-400 text-white font-bold px-8 py-4 rounded-2xl text-lg transition-all transform hover:scale-105 shadow-2xl flex items-center justify-center gap-3">
                         <i class="fa-brands fa-whatsapp text-2xl"></i>
-                        <span class="ar-only">استشرني على واتساب</span>
-                        <span class="en-only hidden">Consult on WhatsApp</span>
+                        <span class="ar-only">استشرني على واتساب</span><span class="en-only">Consult on WhatsApp</span>
                     </a>
-                    <a href="#services" class="bg-white/15 backdrop-blur-sm hover:bg-white/25 text-white font-bold px-8 py-4 rounded-2xl text-lg transition-all border-2 border-white/30 flex items-center justify-center gap-2">
-                        <span class="ar-only">شاهد خدماتي</span>
-                        <span class="en-only hidden">View Services</span>
-                        <i class="fa-solid fa-arrow-down"></i>
+                    <a href="#services" class="bg-white/15 hover:bg-white/25 text-white font-bold px-8 py-4 rounded-2xl text-lg transition-all border-2 border-white/30 flex items-center justify-center gap-2">
+                        <span class="ar-only">شاهد الخدمات</span><span class="en-only">View Services</span>
                     </a>
                 </div>
-
-                <!-- Trust stats -->
                 <div class="flex gap-8 mt-12 justify-center lg:justify-start text-white/70">
-                    <div class="text-center">
-                        <div class="text-2xl font-extrabold text-white">✓</div>
-                        <div class="text-sm ar-only">طبيب مرخص</div>
-                        <div class="text-sm en-only hidden">Licensed Vet</div>
-                    </div>
-                    <div class="text-center">
-                        <div class="text-2xl font-extrabold text-white">24/7</div>
-                        <div class="text-sm ar-only">دعم متواصل</div>
-                        <div class="text-sm en-only hidden">24/7 Support</div>
-                    </div>
-                    <div class="text-center">
-                        <div class="text-2xl font-extrabold text-white">100%</div>
-                        <div class="text-sm ar-only">خصوصية تامة</div>
-                        <div class="text-sm en-only hidden">100% Private</div>
-                    </div>
+                    <div class="text-center"><div class="text-2xl font-extrabold text-white">✓</div><div class="text-sm ar-only">طبيب مرخص</div><div class="text-sm en-only">Licensed Vet</div></div>
+                    <div class="text-center"><div class="text-2xl font-extrabold text-white">24/7</div><div class="text-sm ar-only">دعم متواصل</div><div class="text-sm en-only">24/7 Support</div></div>
+                    <div class="text-center"><div class="text-2xl font-extrabold text-white">100%</div><div class="text-sm ar-only">خصوصية تامة</div><div class="text-sm en-only">Private</div></div>
                 </div>
             </div>
-            
-            <!-- Hero Image / Card -->
             <div class="hidden lg:flex justify-center">
-                <div class="glass rounded-3xl p-8 max-w-md shadow-2xl animate-float">
+                <div class="glass rounded-3xl p-8 max-w-md shadow-2xl" style="animation: float 6s ease-in-out infinite">
                     <div class="text-center">
-                        <div class="w-32 h-32 bg-gradient-to-br from-vet-400 to-vet-600 rounded-full mx-auto flex items-center justify-center text-6xl shadow-xl mb-6">
-                            🩺
-                        </div>
-                        <h3 class="text-2xl font-extrabold text-gray-800 mb-2 ar-only">استشارة سريعة</h3>
-                        <h3 class="text-2xl font-extrabold text-gray-800 mb-2 en-only hidden">Quick Consultation</h3>
-                        <p class="text-gray-500 mb-6 ar-only">أرسل لي أعراض حيوانك الأليف واحصل على رد خلال دقائق</p>
-                        <p class="text-gray-500 mb-6 en-only hidden">Send your pet's symptoms and get a response within minutes</p>
+                        <div class="w-32 h-32 bg-gradient-to-br from-vet-400 to-vet-600 rounded-full mx-auto flex items-center justify-center text-6xl shadow-xl mb-6">🩺</div>
+                        <h3 class="text-2xl font-extrabold text-gray-800 mb-2 ar-only">استشارة سريعة</h3><h3 class="text-2xl font-extrabold text-gray-800 mb-2 en-only">Quick Consultation</h3>
+                        <p class="text-gray-500 mb-4 ar-only">أرسل أعراض حيوانك واحصل على رد سريع</p><p class="text-gray-500 mb-4 en-only">Send symptoms & get a fast response</p>
                         <div class="bg-vet-50 rounded-2xl p-4 mb-4">
-                            <div class="flex justify-between items-center mb-2">
-                                <span class="text-gray-600 font-semibold ar-only">استشارة نصية</span>
-                                <span class="text-gray-600 font-semibold en-only hidden">Text Consult</span>
-                                <span class="text-vet-700 font-extrabold text-xl">75 ج.م</span>
-                            </div>
-                            <div class="flex justify-between items-center">
-                                <span class="text-gray-600 font-semibold ar-only">استشارة فيديو</span>
-                                <span class="text-gray-600 font-semibold en-only hidden">Video Consult</span>
-                                <span class="text-vet-700 font-extrabold text-xl">150 ج.م</span>
-                            </div>
+                            <div class="flex justify-between items-center mb-2"><span class="text-gray-600 font-semibold ar-only">استشارة نصية</span><span class="text-gray-600 font-semibold en-only">Text Consult</span><span class="text-vet-700 font-extrabold text-xl">75 ج.م</span></div>
+                            <div class="flex justify-between items-center"><span class="text-gray-600 font-semibold ar-only">استشارة فيديو</span><span class="text-gray-600 font-semibold en-only">Video Consult</span><span class="text-vet-700 font-extrabold text-xl">150 ج.م</span></div>
                         </div>
-                        <a href="https://wa.me/201210254572" target="_blank" class="block w-full bg-vet-600 hover:bg-vet-500 text-white font-bold py-3 rounded-xl transition-all text-lg">
-                            <i class="fa-brands fa-whatsapp ml-2"></i>
-                            <span class="ar-only">تواصل الآن</span>
-                            <span class="en-only hidden">Contact Now</span>
-                        </a>
+                        <a href="https://wa.me/201210254572" class="block w-full bg-vet-600 hover:bg-vet-500 text-white font-bold py-3 rounded-xl transition-all text-lg"><i class="fa-brands fa-whatsapp ml-2"></i><span class="ar-only">تواصل الآن</span><span class="en-only">Contact Now</span></a>
                     </div>
                 </div>
             </div>
@@ -277,494 +97,303 @@
     </div>
 </section>
 
-<!-- ============ ABOUT ============ -->
-<section class="py-20 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<!-- DISCOUNT BANNER -->
+<section class="discount-banner py-3 text-center text-white font-extrabold text-lg">
+    <span class="ar-only">🔥 عرض خاص: خصم 50% على أول استشارة لك! استخدم كود: <span class="bg-white/30 px-3 py-1 rounded-full">WELCOME50</span></span>
+    <span class="en-only">🔥 Special Offer: 50% OFF your first consultation! Use code: <span class="bg-white/30 px-3 py-1 rounded-full">WELCOME50</span></span>
+</section>
+
+<!-- STATS + ABOUT -->
+<section id="stats" class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 text-center mb-12">
+            <div class="bg-vet-50 rounded-2xl p-6"><div class="stat-number" data-count="500">500+</div><p class="text-gray-600 font-semibold mt-2 ar-only">حيوان تمت مساعدته</p><p class="text-gray-600 font-semibold mt-2 en-only">Pets Helped</p></div>
+            <div class="bg-vet-50 rounded-2xl p-6"><div class="stat-number">5+</div><p class="text-gray-600 font-semibold mt-2 ar-only">سنوات خبرة</p><p class="text-gray-600 font-semibold mt-2 en-only">Years Experience</p></div>
+            <div class="bg-vet-50 rounded-2xl p-6"><div class="stat-number">4.9</div><p class="text-gray-600 font-semibold mt-2 ar-only">⭐ تقييم العملاء</p><p class="text-gray-600 font-semibold mt-2 en-only">⭐ Client Rating</p></div>
+            <div class="bg-vet-50 rounded-2xl p-6"><div class="stat-number">24/7</div><p class="text-gray-600 font-semibold mt-2 ar-only">خدمة طوارئ</p><p class="text-gray-600 font-semibold mt-2 en-only">Emergency Care</p></div>
+        </div>
         <div class="grid lg:grid-cols-2 gap-12 items-center">
             <div class="text-center lg:text-right">
-                <span class="text-vet-600 font-bold text-sm uppercase tracking-wider ar-only">عن الدكتور</span>
-                <span class="text-vet-600 font-bold text-sm uppercase tracking-wider en-only hidden">About Dr.</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-2 mb-6 ar-only">خبرة ورعاية لصحة حيوانك</h2>
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-2 mb-6 en-only hidden">Expert Care for Your Pet's Health</h2>
-                <p class="text-gray-600 text-lg leading-relaxed mb-6 ar-only">
-                    د. أحمد أباظة، طبيب بيطري حاصل على درجة البكالوريوس في الطب البيطري. أقدم استشارات احترافية عن بُعد لمربي الحيوانات الأليفة لمساعدتك في رعاية حيوانك دون الحاجة للذهاب إلى العيادة.
-                </p>
-                <p class="text-gray-600 text-lg leading-relaxed mb-6 en-only hidden">
-                    Dr. Ahmed Abaza, a licensed veterinarian with a degree in Veterinary Medicine. I provide professional remote consultations for pet owners to help you care for your pet without needing to visit a clinic.
-                </p>
-                <div class="flex flex-wrap gap-4 justify-center lg:justify-start">
-                    <div class="bg-vet-50 text-vet-700 px-5 py-3 rounded-xl font-bold text-sm flex items-center gap-2">
-                        <i class="fa-solid fa-graduation-cap"></i>
-                        <span class="ar-only">طبيب بيطري معتمد</span>
-                        <span class="en-only hidden">Certified Veterinarian</span>
-                    </div>
-                    <div class="bg-vet-50 text-vet-700 px-5 py-3 rounded-xl font-bold text-sm flex items-center gap-2">
-                        <i class="fa-solid fa-heart"></i>
-                        <span class="ar-only">رعاية شاملة</span>
-                        <span class="en-only hidden">Comprehensive Care</span>
-                    </div>
-                    <div class="bg-vet-50 text-vet-700 px-5 py-3 rounded-xl font-bold text-sm flex items-center gap-2">
-                        <i class="fa-solid fa-shield-halved"></i>
-                        <span class="ar-only">خصوصية وأمان</span>
-                        <span class="en-only hidden">Private & Secure</span>
-                    </div>
-                </div>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-4 ar-only">عن الدكتور أحمد</h2><h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-4 en-only">About Dr. Ahmed</h2>
+                <div class="section-divider mb-6" style="margin:0 auto 0 0; float: right"></div>
+                <p class="text-gray-600 text-lg leading-relaxed mb-6 ar-only">د. أحمد أباظة، طبيب بيطري حاصل على درجة البكالوريوس في الطب البيطري. أقدم استشارات احترافية عن بُعد لمربي الحيوانات الأليفة. مهمتي هي مساعدتك في رعاية حيوانك دون الحاجة للذهاب إلى العيادة — بسهولة وأمان.</p>
+                <p class="text-gray-600 text-lg leading-relaxed mb-6 en-only">Dr. Ahmed Abaza, a licensed veterinarian. I provide professional remote consultations for pet owners to help you care for your pet without visiting a clinic — easily and safely.</p>
             </div>
             <div class="flex justify-center">
-                <div class="relative">
-                    <div class="w-64 h-64 lg:w-80 lg:h-80 bg-gradient-to-br from-vet-200 to-vet-400 rounded-full flex items-center justify-center text-8xl shadow-2xl">
-                        🐾
-                    </div>
-                    <div class="absolute -bottom-4 -right-4 bg-white rounded-2xl shadow-xl p-4 flex items-center gap-3">
-                        <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center text-2xl">⭐</div>
-                        <div>
-                            <div class="text-sm font-bold text-gray-800 ar-only">خبرة واحترافية</div>
-                            <div class="text-sm font-bold text-gray-800 en-only hidden">Professional Experience</div>
-                            <div class="text-xs text-gray-500 ar-only">طب بيطري حديث</div>
-                            <div class="text-xs text-gray-500 en-only hidden">Modern Veterinary Medicine</div>
-                        </div>
-                    </div>
-                </div>
+                <img src="images/vet-doctor.jpg" alt="د. أحمد أباظة" class="rounded-3xl shadow-2xl w-full max-w-md gallery-img">
             </div>
         </div>
     </div>
 </section>
 
-<!-- ============ SERVICES & PRICING ============ -->
+<!-- SERVICES -->
 <section id="services" class="py-20 bg-gray-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
-            <span class="text-vet-600 font-bold text-sm uppercase tracking-wider ar-only">الخدمات والأسعار</span>
-            <span class="text-vet-600 font-bold text-sm uppercase tracking-wider en-only hidden">Services & Pricing</span>
-            <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-2 mb-4 ar-only">اختر الباقة المناسبة لحيوانك</h2>
-            <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-2 mb-4 en-only hidden">Choose the Right Plan for Your Pet</h2>
+            <span class="text-vet-600 font-bold text-sm uppercase ar-only">الخدمات والأسعار</span><span class="text-vet-600 font-bold text-sm uppercase en-only">Services & Pricing</span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-2 mb-4 ar-only">اختر الباقة المناسبة لحيوانك</h2><h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-2 mb-4 en-only">Choose the Right Plan</h2>
             <div class="section-divider"></div>
         </div>
-
         <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            <!-- Card 1: Basic -->
+            <!-- Card 1 -->
             <div class="bg-white rounded-2xl p-6 shadow-lg card-hover relative border border-gray-100 text-center">
-                <div class="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center text-3xl mx-auto mb-4">💬</div>
-                <h3 class="text-xl font-extrabold text-gray-900 mb-2 ar-only">استشارة نصية</h3>
-                <h3 class="text-xl font-extrabold text-gray-900 mb-2 en-only hidden">Text Consultation</h3>
-                <p class="text-gray-500 text-sm mb-4 ar-only">أرسل أعراض حيوانك واحصل على تشخيص ونصيحة</p>
-                <p class="text-gray-500 text-sm mb-4 en-only hidden">Send symptoms & get diagnosis & advice</p>
-                <div class="text-4xl font-extrabold text-vet-600 mb-1">75</div>
-                <div class="text-gray-400 text-sm mb-6 ar-only">جنيه مصري</div>
-                <div class="text-gray-400 text-sm mb-6 en-only hidden">EGP</div>
-                <ul class="text-sm text-gray-600 space-y-2 mb-6 text-right">
-                    <li class="ar-only"><i class="fa-solid fa-check text-green-500 ml-2"></i>رد خلال 30 دقيقة</li>
-                    <li class="en-only hidden"><i class="fa-solid fa-check text-green-500 mr-2"></i>Reply within 30 mins</li>
-                    <li class="ar-only"><i class="fa-solid fa-check text-green-500 ml-2"></i>تشخيص مبدئي</li>
-                    <li class="en-only hidden"><i class="fa-solid fa-check text-green-500 mr-2"></i>Initial diagnosis</li>
-                    <li class="ar-only"><i class="fa-solid fa-check text-green-500 ml-2"></i>نصائح علاجية</li>
-                    <li class="en-only hidden"><i class="fa-solid fa-check text-green-500 mr-2"></i>Treatment advice</li>
-                </ul>
-                <a href="https://wa.me/201210254572?text=مرحباً د.أحمد، أريد استشارة نصية" target="_blank" class="block w-full bg-vet-600 hover:bg-vet-500 text-white font-bold py-3 rounded-xl transition-all text-sm">
-                    <span class="ar-only">احجز استشارة نصية</span>
-                    <span class="en-only hidden">Book Text Consult</span>
-                </a>
+                <div class="text-4xl mb-3">💬</div>
+                <h3 class="text-xl font-extrabold text-gray-900 mb-2 ar-only">استشارة نصية</h3><h3 class="text-xl font-extrabold text-gray-900 mb-2 en-only">Text Consultation</h3>
+                <p class="text-gray-500 text-sm mb-4 ar-only">أرسل الأعراض واحصل على تشخيص</p><p class="text-gray-500 text-sm mb-4 en-only">Send symptoms & get diagnosis</p>
+                <div class="text-4xl font-extrabold text-vet-600 mb-1">75</div><div class="text-gray-400 text-sm mb-4 ar-only">جنيه مصري</div><div class="text-gray-400 text-sm mb-4 en-only">EGP</div>
+                <ul class="text-sm text-gray-600 space-y-2 mb-6 text-right"><li class="ar-only">✓ رد خلال 30 دقيقة</li><li class="en-only">✓ Reply within 30min</li><li class="ar-only">✓ تشخيص مبدئي</li><li class="en-only">✓ Initial diagnosis</li></ul>
+                <a href="https://wa.me/201210254572?text=مرحباً د.أحمد، أريد استشارة نصية" class="block w-full bg-vet-600 hover:bg-vet-500 text-white font-bold py-3 rounded-xl text-sm ar-only">احجز استشارة نصية</a><a href="https://wa.me/201210254572?text=Hello Dr, I want a text consultation" class="block w-full bg-vet-600 hover:bg-vet-500 text-white font-bold py-3 rounded-xl text-sm en-only">Book Text Consult</a>
             </div>
-
-            <!-- Card 2: Video -->
+            <!-- Card 2 -->
             <div class="bg-white rounded-2xl p-6 shadow-lg card-hover relative border border-gray-100 text-center">
-                <div class="price-badge ar-only">الأكثر طلباً</div>
-                <div class="price-badge en-only hidden">Most Popular</div>
-                <div class="w-16 h-16 bg-purple-50 rounded-2xl flex items-center justify-center text-3xl mx-auto mb-4 mt-2">📹</div>
-                <h3 class="text-xl font-extrabold text-gray-900 mb-2 ar-only">استشارة فيديو</h3>
-                <h3 class="text-xl font-extrabold text-gray-900 mb-2 en-only hidden">Video Consultation</h3>
-                <p class="text-gray-500 text-sm mb-4 ar-only">مكالمة فيديو مباشرة لفحص حيوانك بالكامل</p>
-                <p class="text-gray-500 text-sm mb-4 en-only hidden">Live video call to fully examine your pet</p>
-                <div class="text-4xl font-extrabold text-vet-600 mb-1">150</div>
-                <div class="text-gray-400 text-sm mb-6 ar-only">جنيه مصري / 30 دقيقة</div>
-                <div class="text-gray-400 text-sm mb-6 en-only hidden">EGP / 30 min</div>
-                <ul class="text-sm text-gray-600 space-y-2 mb-6 text-right">
-                    <li class="ar-only"><i class="fa-solid fa-check text-green-500 ml-2"></i>فحص بصري مباشر</li>
-                    <li class="en-only hidden"><i class="fa-solid fa-check text-green-500 mr-2"></i>Live visual examination</li>
-                    <li class="ar-only"><i class="fa-solid fa-check text-green-500 ml-2"></i>تشخيص مفصل</li>
-                    <li class="en-only hidden"><i class="fa-solid fa-check text-green-500 mr-2"></i>Detailed diagnosis</li>
-                    <li class="ar-only"><i class="fa-solid fa-check text-green-500 ml-2"></i>خطة علاجية كاملة</li>
-                    <li class="en-only hidden"><i class="fa-solid fa-check text-green-500 mr-2"></i>Full treatment plan</li>
-                </ul>
-                <a href="https://wa.me/201210254572?text=مرحباً د.أحمد، أريد حجز استشارة فيديو" target="_blank" class="block w-full bg-gold-500 hover:bg-gold-400 text-white font-bold py-3 rounded-xl transition-all text-sm shadow-lg">
-                    <span class="ar-only">احجز استشارة فيديو</span>
-                    <span class="en-only hidden">Book Video Consult</span>
-                </a>
+                <div class="price-badge ar-only">الأكثر طلباً</div><div class="price-badge en-only">Most Popular</div>
+                <div class="text-4xl mb-3 mt-2">📹</div>
+                <h3 class="text-xl font-extrabold text-gray-900 mb-2 ar-only">استشارة فيديو</h3><h3 class="text-xl font-extrabold text-gray-900 mb-2 en-only">Video Consultation</h3>
+                <p class="text-gray-500 text-sm mb-4 ar-only">مكالمة فيديو مباشرة 30 دقيقة</p><p class="text-gray-500 text-sm mb-4 en-only">Live 30-min video call</p>
+                <div class="text-4xl font-extrabold text-vet-600 mb-1">150</div><div class="text-gray-400 text-sm mb-4 ar-only">جنيه / 30 دقيقة</div><div class="text-gray-400 text-sm mb-4 en-only">EGP / 30min</div>
+                <ul class="text-sm text-gray-600 space-y-2 mb-6 text-right"><li class="ar-only">✓ فحص بصري مباشر</li><li class="en-only">✓ Live examination</li><li class="ar-only">✓ خطة علاجية كاملة</li><li class="en-only">✓ Full treatment plan</li></ul>
+                <a href="https://wa.me/201210254572?text=مرحباً د.أحمد، أريد حجز استشارة فيديو" class="block w-full bg-gold-500 hover:bg-gold-400 text-white font-bold py-3 rounded-xl text-sm shadow-lg ar-only">احجز استشارة فيديو</a><a href="https://wa.me/201210254572?text=Hello Dr, I want a video consultation" class="block w-full bg-gold-500 hover:bg-gold-400 text-white font-bold py-3 rounded-xl text-sm shadow-lg en-only">Book Video Consult</a>
             </div>
-
-            <!-- Card 3: Follow-up -->
+            <!-- Card 3 -->
             <div class="bg-white rounded-2xl p-6 shadow-lg card-hover relative border border-gray-100 text-center">
-                <div class="w-16 h-16 bg-green-50 rounded-2xl flex items-center justify-center text-3xl mx-auto mb-4">📋</div>
-                <h3 class="text-xl font-extrabold text-gray-900 mb-2 ar-only">متابعة أسبوعية</h3>
-                <h3 class="text-xl font-extrabold text-gray-900 mb-2 en-only hidden">Weekly Follow-up</h3>
-                <p class="text-gray-500 text-sm mb-4 ar-only">متابعة حالة حيوانك لمدة أسبوع كامل</p>
-                <p class="text-gray-500 text-sm mb-4 en-only hidden">Full week of follow-up for your pet</p>
-                <div class="text-4xl font-extrabold text-vet-600 mb-1">300</div>
-                <div class="text-gray-400 text-sm mb-6 ar-only">جنيه مصري / أسبوع</div>
-                <div class="text-gray-400 text-sm mb-6 en-only hidden">EGP / week</div>
-                <ul class="text-sm text-gray-600 space-y-2 mb-6 text-right">
-                    <li class="ar-only"><i class="fa-solid fa-check text-green-500 ml-2"></i>استشارة فيديو أولية</li>
-                    <li class="en-only hidden"><i class="fa-solid fa-check text-green-500 mr-2"></i>Initial video consult</li>
-                    <li class="ar-only"><i class="fa-solid fa-check text-green-500 ml-2"></i>متابعة يومية</li>
-                    <li class="en-only hidden"><i class="fa-solid fa-check text-green-500 mr-2"></i>Daily follow-up</li>
-                    <li class="ar-only"><i class="fa-solid fa-check text-green-500 ml-2"></i>تعديل خطة العلاج</li>
-                    <li class="en-only hidden"><i class="fa-solid fa-check text-green-500 mr-2"></i>Treatment adjustments</li>
-                </ul>
-                <a href="https://wa.me/201210254572?text=مرحباً د.أحمد، أريد حجز متابعة أسبوعية" target="_blank" class="block w-full bg-vet-600 hover:bg-vet-500 text-white font-bold py-3 rounded-xl transition-all text-sm">
-                    <span class="ar-only">احجز متابعة</span>
-                    <span class="en-only hidden">Book Follow-up</span>
-                </a>
+                <div class="text-4xl mb-3">📋</div>
+                <h3 class="text-xl font-extrabold text-gray-900 mb-2 ar-only">متابعة أسبوعية</h3><h3 class="text-xl font-extrabold text-gray-900 mb-2 en-only">Weekly Follow-up</h3>
+                <p class="text-gray-500 text-sm mb-4 ar-only">متابعة حالة حيوانك لمدة أسبوع</p><p class="text-gray-500 text-sm mb-4 en-only">Full week follow-up</p>
+                <div class="text-4xl font-extrabold text-vet-600 mb-1">300</div><div class="text-gray-400 text-sm mb-4 ar-only">جنيه / أسبوع</div><div class="text-gray-400 text-sm mb-4 en-only">EGP / week</div>
+                <ul class="text-sm text-gray-600 space-y-2 mb-6 text-right"><li class="ar-only">✓ استشارة فيديو أولية</li><li class="en-only">✓ Initial video consult</li><li class="ar-only">✓ متابعة يومية</li><li class="en-only">✓ Daily follow-up</li></ul>
+                <a href="https://wa.me/201210254572?text=مرحباً د.أحمد، أريد حجز متابعة أسبوعية" class="block w-full bg-vet-600 hover:bg-vet-500 text-white font-bold py-3 rounded-xl text-sm ar-only">احجز متابعة</a><a href="https://wa.me/201210254572?text=Hello Dr, I want weekly follow-up" class="block w-full bg-vet-600 hover:bg-vet-500 text-white font-bold py-3 rounded-xl text-sm en-only">Book Follow-up</a>
             </div>
-
-            <!-- Card 4: Emergency -->
+            <!-- Card 4 -->
             <div class="bg-white rounded-2xl p-6 shadow-lg card-hover relative border border-red-100 text-center">
-                <div class="w-16 h-16 bg-red-50 rounded-2xl flex items-center justify-center text-3xl mx-auto mb-4">🚨</div>
-                <h3 class="text-xl font-extrabold text-gray-900 mb-2 ar-only">استشارة طارئة</h3>
-                <h3 class="text-xl font-extrabold text-gray-900 mb-2 en-only hidden">Emergency Consult</h3>
-                <p class="text-gray-500 text-sm mb-4 ar-only">حالة طارئة؟ تواصل معي فوراً</p>
-                <p class="text-gray-500 text-sm mb-4 en-only hidden">Emergency? Contact me immediately</p>
-                <div class="text-4xl font-extrabold text-red-500 mb-1">200</div>
-                <div class="text-gray-400 text-sm mb-6 ar-only">جنيه مصري</div>
-                <div class="text-gray-400 text-sm mb-6 en-only hidden">EGP</div>
-                <ul class="text-sm text-gray-600 space-y-2 mb-6 text-right">
-                    <li class="ar-only"><i class="fa-solid fa-check text-green-500 ml-2"></i>رد فوري</li>
-                    <li class="en-only hidden"><i class="fa-solid fa-check text-green-500 mr-2"></i>Instant reply</li>
-                    <li class="ar-only"><i class="fa-solid fa-check text-green-500 ml-2"></i>توجيه للطوارئ</li>
-                    <li class="en-only hidden"><i class="fa-solid fa-check text-green-500 mr-2"></i>Emergency guidance</li>
-                    <li class="ar-only"><i class="fa-solid fa-check text-green-500 ml-2"></i>متاح 24/7</li>
-                    <li class="en-only hidden"><i class="fa-solid fa-check text-green-500 mr-2"></i>Available 24/7</li>
-                </ul>
-                <a href="https://wa.me/201210254572?text=حالة طارئة - د.أحمد" target="_blank" class="block w-full bg-red-500 hover:bg-red-400 text-white font-bold py-3 rounded-xl transition-all text-sm">
-                    <span class="ar-only">حالة طارئة</span>
-                    <span class="en-only hidden">Emergency Now</span>
-                </a>
+                <div class="text-4xl mb-3">🚨</div>
+                <h3 class="text-xl font-extrabold text-gray-900 mb-2 ar-only">استشارة طارئة</h3><h3 class="text-xl font-extrabold text-gray-900 mb-2 en-only">Emergency</h3>
+                <p class="text-gray-500 text-sm mb-4 ar-only">حالة طارئة؟ تواصل فوراً</p><p class="text-gray-500 text-sm mb-4 en-only">Emergency? Contact now</p>
+                <div class="text-4xl font-extrabold text-red-500 mb-1">200</div><div class="text-gray-400 text-sm mb-4 ar-only">جنيه مصري</div><div class="text-gray-400 text-sm mb-4 en-only">EGP</div>
+                <ul class="text-sm text-gray-600 space-y-2 mb-6 text-right"><li class="ar-only">✓ رد فوري</li><li class="en-only">✓ Instant reply</li><li class="ar-only">✓ متاح 24/7</li><li class="en-only">✓ Available 24/7</li></ul>
+                <a href="https://wa.me/201210254572?text=حالة طارئة - د.أحمد" class="block w-full bg-red-500 hover:bg-red-400 text-white font-bold py-3 rounded-xl text-sm ar-only">حالة طارئة</a><a href="https://wa.me/201210254572?text=Emergency - Dr. Ahmed" class="block w-full bg-red-500 hover:bg-red-400 text-white font-bold py-3 rounded-xl text-sm en-only">Emergency</a>
             </div>
         </div>
     </div>
 </section>
 
-<!-- ============ PAYMENT METHODS ============ -->
-<section id="payment" class="py-20 bg-white">
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+<!-- GALLERY -->
+<section id="gallery" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
-            <span class="text-vet-600 font-bold text-sm uppercase tracking-wider ar-only">طرق الدفع</span>
-            <span class="text-vet-600 font-bold text-sm uppercase tracking-wider en-only hidden">Payment Methods</span>
-            <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-2 mb-4 ar-only">ادفع بأسهل طريقة</h2>
-            <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-2 mb-4 en-only hidden">Pay the Easy Way</h2>
+            <span class="text-vet-600 font-bold text-sm uppercase ar-only">معرض الصور</span><span class="text-vet-600 font-bold text-sm uppercase en-only">Photo Gallery</span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-2 mb-4 ar-only">حيوانات تحت رعايتنا</h2><h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-2 mb-4 en-only">Pets Under Our Care</h2>
             <div class="section-divider"></div>
         </div>
-
-        <div class="grid lg:grid-cols-2 gap-8">
-            <!-- InstaPay -->
-            <div class="payment-glow bg-gradient-to-br from-vet-50 to-emerald-50 rounded-3xl p-8 border border-vet-200 text-center">
-                <div class="w-20 h-20 bg-gradient-to-br from-vet-500 to-vet-700 rounded-2xl flex items-center justify-center text-white text-3xl mx-auto mb-6 shadow-lg">
-                    <i class="fa-solid fa-mobile-screen-button"></i>
-                </div>
-                <h3 class="text-2xl font-extrabold text-gray-900 mb-2">InstaPay</h3>
-                <p class="text-gray-500 mb-6 ar-only">حول فوراً من أي محفظة إلكترونية أو تطبيق بنكي</p>
-                <p class="text-gray-500 mb-6 en-only hidden">Transfer instantly from any e-wallet or banking app</p>
-                
-                <div class="bg-white rounded-2xl p-6 shadow-inner">
-                    <div class="text-sm text-gray-400 mb-2 ar-only">رقم إنستا باي</div>
-                    <div class="text-sm text-gray-400 mb-2 en-only hidden">InstaPay Number</div>
-                    <div class="text-3xl font-extrabold text-vet-700 mb-4 tracking-wider" dir="ltr">01210254572</div>
-                    <div class="text-sm text-gray-400 mb-2 ar-only">باسم</div>
-                    <div class="text-sm text-gray-400 mb-2 en-only hidden">Account Name</div>
-                    <div class="text-xl font-bold text-gray-800">Ahmed Abaza</div>
-                </div>
-                
-                <p class="text-sm text-gray-400 mt-6 ar-only">بعد التحويل، أرسل لي إشعار التحويل على واتساب</p>
-                <p class="text-sm text-gray-400 mt-6 en-only hidden">After transfer, send me the receipt on WhatsApp</p>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="relative overflow-hidden rounded-2xl shadow-lg gallery-img">
+                <img src="images/cat.jpg" alt="قطة" class="w-full h-72 object-cover">
+                <div class="absolute bottom-0 right-0 left-0 bg-gradient-to-t from-black/60 to-transparent p-4 text-white font-bold ar-only">رعاية القطط 🐱</div><div class="absolute bottom-0 right-0 left-0 bg-gradient-to-t from-black/60 to-transparent p-4 text-white font-bold en-only">Cat Care 🐱</div>
             </div>
-
-            <!-- Bank Transfer -->
-            <div class="payment-glow bg-gradient-to-br from-blue-50 to-indigo-50 rounded-3xl p-8 border border-blue-200 text-center">
-                <div class="w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl flex items-center justify-center text-white text-3xl mx-auto mb-6 shadow-lg">
-                    <i class="fa-solid fa-building-columns"></i>
-                </div>
-                <h3 class="text-2xl font-extrabold text-gray-900 mb-2 ar-only">تحويل بنكي</h3>
-                <h3 class="text-2xl font-extrabold text-gray-900 mb-2 en-only hidden">Bank Transfer</h3>
-                <p class="text-gray-500 mb-6 ar-only">حول من أي بنك مصري مباشرة</p>
-                <p class="text-gray-500 mb-6 en-only hidden">Transfer from any Egyptian bank</p>
-                
-                <div class="bg-white rounded-2xl p-6 shadow-inner text-center">
-                    <p class="text-gray-400 text-lg ar-only">سيتم إضافة بيانات الحساب البنكي قريباً</p>
-                    <p class="text-gray-400 text-lg en-only hidden">Bank account details coming soon</p>
-                    <p class="text-vet-600 font-bold mt-2 ar-only">في الوقت الحالي، يُرجى استخدام إنستا باي</p>
-                    <p class="text-vet-600 font-bold mt-2 en-only hidden">For now, please use InstaPay</p>
-                </div>
+            <div class="relative overflow-hidden rounded-2xl shadow-lg gallery-img">
+                <img src="images/dog.jpg" alt="كلب" class="w-full h-72 object-cover">
+                <div class="absolute bottom-0 right-0 left-0 bg-gradient-to-t from-black/60 to-transparent p-4 text-white font-bold ar-only">رعاية الكلاب 🐶</div><div class="absolute bottom-0 right-0 left-0 bg-gradient-to-t from-black/60 to-transparent p-4 text-white font-bold en-only">Dog Care 🐶</div>
+            </div>
+            <div class="relative overflow-hidden rounded-2xl shadow-lg gallery-img">
+                <img src="images/medicine.jpg" alt="أدوية بيطرية" class="w-full h-72 object-cover">
+                <div class="absolute bottom-0 right-0 left-0 bg-gradient-to-t from-black/60 to-transparent p-4 text-white font-bold ar-only">أدوية ومستلزمات 💊</div><div class="absolute bottom-0 right-0 left-0 bg-gradient-to-t from-black/60 to-transparent p-4 text-white font-bold en-only">Medicine & Supplies 💊</div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- ============ HOW IT WORKS ============ -->
+<!-- TESTIMONIALS -->
 <section class="py-20 bg-gray-50">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
-            <span class="text-vet-600 font-bold text-sm uppercase tracking-wider ar-only">كيف يعمل؟</span>
-            <span class="text-vet-600 font-bold text-sm uppercase tracking-wider en-only hidden">How It Works</span>
-            <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-2 mb-4 ar-only">ثلاث خطوات بسيطة</h2>
-            <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-2 mb-4 en-only hidden">Three Simple Steps</h2>
+            <span class="text-vet-600 font-bold text-sm uppercase ar-only">آراء العملاء</span><span class="text-vet-600 font-bold text-sm uppercase en-only">Testimonials</span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-2 mb-4 ar-only">ماذا يقول عملاؤنا؟</h2><h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-2 mb-4 en-only">What Our Clients Say</h2>
             <div class="section-divider"></div>
         </div>
-
-        <div class="grid sm:grid-cols-3 gap-8">
-            <div class="text-center">
-                <div class="w-20 h-20 bg-vet-100 rounded-full flex items-center justify-center text-4xl mx-auto mb-6 relative">
-                    <span>1️⃣</span>
-                </div>
-                <h4 class="text-xl font-extrabold text-gray-900 mb-3 ar-only">تواصل معي</h4>
-                <h4 class="text-xl font-extrabold text-gray-900 mb-3 en-only hidden">Contact Me</h4>
-                <p class="text-gray-500 ar-only">راسلني على واتساب واشرح لي حالة حيوانك الأليف</p>
-                <p class="text-gray-500 en-only hidden">Message me on WhatsApp and describe your pet's condition</p>
+        <div class="grid sm:grid-cols-3 gap-6">
+            <div class="bg-white rounded-2xl p-6 shadow-lg testimonial-card transition-all">
+                <div class="text-yellow-400 text-xl mb-3">⭐⭐⭐⭐⭐</div>
+                <p class="text-gray-600 mb-4 ar-only">"دكتور أحمد ممتاز! شخص قطتي عن طريق الفيديو ووصف العلاج المناسب. القطة بقت أحسن بكتير. أنصح بيه بشدة!"</p>
+                <p class="text-gray-600 mb-4 en-only">"Dr. Ahmed is excellent! He diagnosed my cat via video and prescribed the right treatment. She's much better now. Highly recommended!"</p>
+                <div class="font-extrabold text-vet-700 ar-only">— محمد صلاح</div><div class="font-extrabold text-vet-700 en-only">— Mohamed Salah</div>
             </div>
-            <div class="text-center">
-                <div class="w-20 h-20 bg-vet-100 rounded-full flex items-center justify-center text-4xl mx-auto mb-6">
-                    <span>2️⃣</span>
-                </div>
-                <h4 class="text-xl font-extrabold text-gray-900 mb-3 ar-only">ادفع بسهولة</h4>
-                <h4 class="text-xl font-extrabold text-gray-900 mb-3 en-only hidden">Pay Easily</h4>
-                <p class="text-gray-500 ar-only">حول قيمة الاستشارة عبر إنستا باي أو تحويل بنكي</p>
-                <p class="text-gray-500 en-only hidden">Transfer the consultation fee via InstaPay or bank</p>
+            <div class="bg-white rounded-2xl p-6 shadow-lg testimonial-card transition-all">
+                <div class="text-yellow-400 text-xl mb-3">⭐⭐⭐⭐⭐</div>
+                <p class="text-gray-600 mb-4 ar-only">"أول مرة أجرب استشارة أونلاين وكنت قلقان، لكن الدكتور طمني جداً. كلبي كان تعبان والدكتور تابع معايا يوم بيوم."</p>
+                <p class="text-gray-600 mb-4 en-only">"First time trying online consultation and I was worried, but Dr. Ahmed reassured me. My dog was sick and he followed up day by day."</p>
+                <div class="font-extrabold text-vet-700 ar-only">— سارة إبراهيم</div><div class="font-extrabold text-vet-700 en-only">— Sara Ibrahim</div>
             </div>
-            <div class="text-center">
-                <div class="w-20 h-20 bg-vet-100 rounded-full flex items-center justify-center text-4xl mx-auto mb-6">
-                    <span>3️⃣</span>
-                </div>
-                <h4 class="text-xl font-extrabold text-gray-900 mb-3 ar-only">احصل على استشارتك</h4>
-                <h4 class="text-xl font-extrabold text-gray-900 mb-3 en-only hidden">Get Your Consultation</h4>
-                <p class="text-gray-500 ar-only">استلم التشخيص وخطة العلاج مباشرة على واتساب</p>
-                <p class="text-gray-500 en-only hidden">Receive your diagnosis and treatment plan on WhatsApp</p>
+            <div class="bg-white rounded-2xl p-6 shadow-lg testimonial-card transition-all">
+                <div class="text-yellow-400 text-xl mb-3">⭐⭐⭐⭐⭐</div>
+                <p class="text-gray-600 mb-4 ar-only">"سرعة في الرد واحترافية في التعامل. دفع عن طريق إنستا باي وكان كل حاجة سهلة. شكراً دكتور!"</p>
+                <p class="text-gray-600 mb-4 en-only">"Fast response and professional handling. Paid via InstaPay and everything was easy. Thank you Doctor!"</p>
+                <div class="font-extrabold text-vet-700 ar-only">— أحمد علي</div><div class="font-extrabold text-vet-700 en-only">— Ahmed Ali</div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- ============ CONTACT / FORM ============ -->
+<!-- QUICK HEALTH GUIDE -->
+<section class="py-20 bg-white">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <span class="text-vet-600 font-bold text-sm uppercase ar-only">دليل صحي سريع</span><span class="text-vet-600 font-bold text-sm uppercase en-only">Quick Health Guide</span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-2 mb-4 ar-only">نصائح وإرشادات سريعة</h2><h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-2 mb-4 en-only">Quick Tips & Guidance</h2>
+            <div class="section-divider"></div>
+        </div>
+        <div class="grid sm:grid-cols-2 gap-6">
+            <div class="bg-red-50 rounded-2xl p-6 border border-red-100">
+                <h4 class="text-xl font-extrabold text-red-700 mb-3 ar-only">🚨 إسعافات أولية للحيوانات</h4><h4 class="text-xl font-extrabold text-red-700 mb-3 en-only">🚨 Pet First Aid</h4>
+                <ul class="text-gray-700 space-y-2 text-sm ar-only">
+                    <li>• إذا حيوانك ابتلع شيئاً غريباً: لا تحاول إخراجه بنفسك، تواصل معي فوراً</li>
+                    <li>• في حالة النزيف: اضغط على الجرح بقطعة قماش نظيفة</li>
+                    <li>• حرارة عالية: كمادات ماء فاتر (مش بارد)</li>
+                    <li>• تشنجات: أبعد أي حاجة ممكن تأذيه واتصل بيا فوراً</li>
+                </ul>
+                <ul class="text-gray-700 space-y-2 text-sm en-only">
+                    <li>• If your pet swallowed something: Don't try to remove it yourself, contact me immediately</li>
+                    <li>• Bleeding: Apply pressure with clean cloth</li>
+                    <li>• High fever: Lukewarm compresses (not cold)</li>
+                    <li>• Seizures: Remove dangerous objects and call me immediately</li>
+                </ul>
+            </div>
+            <div class="bg-green-50 rounded-2xl p-6 border border-green-100">
+                <h4 class="text-xl font-extrabold text-green-700 mb-3 ar-only">🍖 نصائح تغذية سريعة</h4><h4 class="text-xl font-extrabold text-green-700 mb-3 en-only">🍖 Quick Nutrition Tips</h4>
+                <ul class="text-gray-700 space-y-2 text-sm ar-only">
+                    <li>• لا تطعم كلبك أو قطتك شوكولاتة، بصل، أو ثوم أبداً</li>
+                    <li>• المياه النظيفة لازم تكون متاحة طول الوقت</li>
+                    <li>• الكلاب: 2-3 وجبات في اليوم</li>
+                    <li>• القطط: أكل جاف + رطب للتوازن</li>
+                    <li>• استشرني قبل ما تغير نوع الأكل</li>
+                </ul>
+                <ul class="text-gray-700 space-y-2 text-sm en-only">
+                    <li>• Never feed your dog/cat chocolate, onion, or garlic</li>
+                    <li>• Clean water must be available at all times</li>
+                    <li>• Dogs: 2-3 meals per day</li>
+                    <li>• Cats: Dry + wet food for balance</li>
+                    <li>• Consult me before changing food type</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PAYMENT -->
+<section id="payment" class="py-20 bg-gray-50">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <span class="text-vet-600 font-bold text-sm uppercase ar-only">طرق الدفع</span><span class="text-vet-600 font-bold text-sm uppercase en-only">Payment Methods</span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-2 mb-4 ar-only">ادفع بأسهل طريقة</h2><h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-2 mb-4 en-only">Pay the Easy Way</h2>
+            <div class="section-divider"></div>
+        </div>
+        <div class="grid lg:grid-cols-2 gap-8">
+            <div class="bg-gradient-to-br from-vet-50 to-emerald-50 rounded-3xl p-8 border border-vet-200 text-center" style="box-shadow:0 0 30px rgba(5,150,105,.15)">
+                <div class="text-5xl mb-4">📱</div>
+                <h3 class="text-2xl font-extrabold text-gray-900 mb-2">InstaPay</h3>
+                <p class="text-gray-500 mb-6 ar-only">حول فوراً من أي محفظة إلكترونية</p><p class="text-gray-500 mb-6 en-only">Transfer instantly from any e-wallet</p>
+                <div class="bg-white rounded-2xl p-6 shadow-inner">
+                    <div class="text-sm text-gray-400 mb-1 ar-only">رقم إنستا باي</div><div class="text-sm text-gray-400 mb-1 en-only">InstaPay Number</div>
+                    <div class="text-3xl font-extrabold text-vet-700 mb-3" dir="ltr">01210254572</div>
+                    <div class="text-lg font-bold text-gray-800">Ahmed Abaza</div>
+                </div>
+            </div>
+            <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-3xl p-8 border border-blue-200 text-center" style="box-shadow:0 0 30px rgba(5,150,105,.15)">
+                <div class="text-5xl mb-4">🏦</div>
+                <h3 class="text-2xl font-extrabold text-gray-900 mb-2 ar-only">تحويل بنكي</h3><h3 class="text-2xl font-extrabold text-gray-900 mb-2 en-only">Bank Transfer</h3>
+                <p class="text-gray-500 mb-6 ar-only">حول من أي بنك مصري</p><p class="text-gray-500 mb-6 en-only">Transfer from any Egyptian bank</p>
+                <div class="bg-white rounded-2xl p-6 shadow-inner text-center">
+                    <p class="text-gray-400 text-lg ar-only">سيتم إضافة بيانات الحساب قريباً</p><p class="text-gray-400 text-lg en-only">Bank details coming soon</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
 <section id="contact" class="py-20 bg-white">
     <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
-            <span class="text-vet-600 font-bold text-sm uppercase tracking-wider ar-only">تواصل معي</span>
-            <span class="text-vet-600 font-bold text-sm uppercase tracking-wider en-only hidden">Contact Me</span>
-            <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-2 mb-4 ar-only">هل لديك سؤال؟</h2>
-            <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-2 mb-4 en-only hidden">Have a Question?</h2>
+            <span class="text-vet-600 font-bold text-sm uppercase ar-only">تواصل معي</span><span class="text-vet-600 font-bold text-sm uppercase en-only">Contact Me</span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-2 mb-4 ar-only">هل لديك سؤال؟</h2><h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-2 mb-4 en-only">Have a Question?</h2>
             <div class="section-divider"></div>
         </div>
-
         <div class="bg-gray-50 rounded-3xl p-8 sm:p-12 shadow-lg">
             <form id="consult-form" class="space-y-6" onsubmit="handleSubmit(event)">
                 <div class="grid sm:grid-cols-2 gap-6">
                     <div>
-                        <label class="block text-sm font-bold text-gray-700 mb-2 ar-only">الاسم</label>
-                        <label class="block text-sm font-bold text-gray-700 mb-2 en-only hidden">Name</label>
-                        <input type="text" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-vet-500 focus:ring-2 focus:ring-vet-100 outline-none transition-all" placeholder="اسمك الكامل">
+                        <label class="block text-sm font-bold text-gray-700 mb-2 ar-only">الاسم</label><label class="block text-sm font-bold text-gray-700 mb-2 en-only">Name</label>
+                        <input type="text" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-vet-500 focus:ring-2 focus:ring-vet-100 outline-none">
                     </div>
                     <div>
-                        <label class="block text-sm font-bold text-gray-700 mb-2 ar-only">رقم الهاتف</label>
-                        <label class="block text-sm font-bold text-gray-700 mb-2 en-only hidden">Phone Number</label>
-                        <input type="tel" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-vet-500 focus:ring-2 focus:ring-vet-100 outline-none transition-all" placeholder="01xxxxxxxxx">
+                        <label class="block text-sm font-bold text-gray-700 mb-2 ar-only">رقم الهاتف</label><label class="block text-sm font-bold text-gray-700 mb-2 en-only">Phone</label>
+                        <input type="tel" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-vet-500 focus:ring-2 focus:ring-vet-100 outline-none" placeholder="01xxxxxxxxx">
                     </div>
                 </div>
                 <div>
-                    <label class="block text-sm font-bold text-gray-700 mb-2 ar-only">نوع الحيوان</label>
-                    <label class="block text-sm font-bold text-gray-700 mb-2 en-only hidden">Pet Type</label>
-                    <select class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-vet-500 focus:ring-2 focus:ring-vet-100 outline-none transition-all bg-white">
-                        <option value="" class="ar-only">اختر نوع الحيوان</option>
-                        <option value="" class="en-only hidden">Select pet type</option>
-                        <option value="cat" class="ar-only">🐱 قط</option>
-                        <option value="cat" class="en-only hidden">🐱 Cat</option>
-                        <option value="dog" class="ar-only">🐶 كلب</option>
-                        <option value="dog" class="en-only hidden">🐶 Dog</option>
-                        <option value="bird" class="ar-only">🐦 طائر</option>
-                        <option value="bird" class="en-only hidden">🐦 Bird</option>
-                        <option value="other" class="ar-only">🐾 حيوان آخر</option>
-                        <option value="other" class="en-only hidden">🐾 Other</option>
+                    <label class="block text-sm font-bold text-gray-700 mb-2 ar-only">نوع الحيوان</label><label class="block text-sm font-bold text-gray-700 mb-2 en-only">Pet Type</label>
+                    <select class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-vet-500 focus:ring-2 focus:ring-vet-100 outline-none bg-white">
+                        <option value="" class="ar-only">اختر نوع الحيوان</option><option value="" class="en-only">Select pet type</option>
+                        <option value="قط">🐱 قط / Cat</option><option value="كلب">🐶 كلب / Dog</option><option value="طائر">🐦 طائر / Bird</option><option value="أخرى">🐾 أخرى / Other</option>
                     </select>
                 </div>
                 <div>
-                    <label class="block text-sm font-bold text-gray-700 mb-2 ar-only">وصف الحالة</label>
-                    <label class="block text-sm font-bold text-gray-700 mb-2 en-only hidden">Describe the Condition</label>
-                    <textarea rows="4" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-vet-500 focus:ring-2 focus:ring-vet-100 outline-none transition-all" placeholder="اكتب الأعراض اللي حيوانك بيعاني منها..."></textarea>
+                    <label class="block text-sm font-bold text-gray-700 mb-2 ar-only">وصف الحالة</label><label class="block text-sm font-bold text-gray-700 mb-2 en-only">Condition Description</label>
+                    <textarea rows="4" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-vet-500 focus:ring-2 focus:ring-vet-100 outline-none" placeholder="اكتب الأعراض هنا..."></textarea>
                 </div>
-                <button type="submit" class="w-full bg-vet-600 hover:bg-vet-500 text-white font-bold py-4 rounded-xl text-lg transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
-                    <i class="fa-brands fa-whatsapp ml-2"></i>
-                    <span class="ar-only">أرسل على واتساب</span>
-                    <span class="en-only hidden">Send via WhatsApp</span>
+                <button type="submit" class="w-full bg-vet-600 hover:bg-vet-500 text-white font-bold py-4 rounded-xl text-lg transition-all shadow-lg">
+                    <i class="fa-brands fa-whatsapp ml-2"></i><span class="ar-only">أرسل على واتساب</span><span class="en-only">Send via WhatsApp</span>
                 </button>
             </form>
         </div>
     </div>
 </section>
 
-<!-- ============ FAQ ============ -->
-<section class="py-20 bg-gray-50">
-    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16">
-            <span class="text-vet-600 font-bold text-sm uppercase tracking-wider ar-only">أسئلة شائعة</span>
-            <span class="text-vet-600 font-bold text-sm uppercase tracking-wider en-only hidden">FAQ</span>
-            <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-2 mb-4 ar-only">كل اللي تحب تعرفه</h2>
-            <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-2 mb-4 en-only hidden">Everything You Need to Know</h2>
-            <div class="section-divider"></div>
-        </div>
-
-        <div class="space-y-4">
-            <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:border-vet-200 transition-all cursor-pointer">
-                <div class="flex justify-between items-center">
-                    <h4 class="font-extrabold text-gray-900 ar-only">هل الاستشارات الأونلاين دقيقة؟</h4>
-                    <h4 class="font-extrabold text-gray-900 en-only hidden">Are online consultations accurate?</h4>
-                    <i class="fa-solid fa-chevron-down text-vet-500"></i>
-                </div>
-                <p class="text-gray-500 mt-3 ar-only">نعم، الكثير من الحالات يمكن تشخيصها عن بُعد من خلال وصف الأعراض والصور والفيديو. لكن الحالات اللي بتحتاج فحص سريري مباشر هوجهك لأقرب عيادة.</p>
-                <p class="text-gray-500 mt-3 en-only hidden">Yes, many conditions can be diagnosed remotely through symptom descriptions, photos, and videos. However, cases requiring direct clinical examination will be referred to the nearest clinic.</p>
-            </div>
-            <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:border-vet-200 transition-all cursor-pointer">
-                <div class="flex justify-between items-center">
-                    <h4 class="font-extrabold text-gray-900 ar-only">كم وقت الاستشارة؟</h4>
-                    <h4 class="font-extrabold text-gray-900 en-only hidden">How long is a consultation?</h4>
-                    <i class="fa-solid fa-chevron-down text-vet-500"></i>
-                </div>
-                <p class="text-gray-500 mt-3 ar-only">الاستشارة النصية يكون الرد خلال 30-60 دقيقة. استشارة الفيديو مدتها 30 دقيقة كاملة.</p>
-                <p class="text-gray-500 mt-3 en-only hidden">Text consultations receive a reply within 30-60 minutes. Video consultations last a full 30 minutes.</p>
-            </div>
-            <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:border-vet-200 transition-all cursor-pointer">
-                <div class="flex justify-between items-center">
-                    <h4 class="font-extrabold text-gray-900 ar-only">هل ممكن تصرف أدوية؟</h4>
-                    <h4 class="font-extrabold text-gray-900 en-only hidden">Can you prescribe medication?</h4>
-                    <i class="fa-solid fa-chevron-down text-vet-500"></i>
-                </div>
-                <p class="text-gray-500 mt-3 ar-only">بنصحك بالأدوية المناسبة لحالة حيوانك، لكن صرف الأدوية بدون فحص مباشر بيكون تحت مسؤوليتك. الحالات الخطيرة لازم تزور عيادة.</p>
-                <p class="text-gray-500 mt-3 en-only hidden">I'll recommend suitable medications for your pet's condition, but dispensing meds without a direct exam is at your discretion. Serious cases must visit a clinic.</p>
-            </div>
-            <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:border-vet-200 transition-all cursor-pointer">
-                <div class="flex justify-between items-center">
-                    <h4 class="font-extrabold text-gray-900 ar-only">ماذا لو لم أكن راضياً عن الاستشارة؟</h4>
-                    <h4 class="font-extrabold text-gray-900 en-only hidden">What if I'm not satisfied?</h4>
-                    <i class="fa-solid fa-chevron-down text-vet-500"></i>
-                </div>
-                <p class="text-gray-500 mt-3 ar-only">رضاك هو أولويتي. لو محستش إنك استفدت، تقدر تتواصل معي وأنا هعمل اللازم.</p>
-                <p class="text-gray-500 mt-3 en-only hidden">Your satisfaction is my priority. If you feel you didn't benefit, contact me and I'll make it right.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ============ CTA ============ -->
+<!-- CTA -->
 <section class="py-20 hero-gradient">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-6 ar-only">حيوانك الأليف يستحق أفضل رعاية</h2>
-        <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-6 en-only hidden">Your Pet Deserves the Best Care</h2>
-        <p class="text-white/80 text-lg mb-8 max-w-2xl mx-auto ar-only">لا تتردد في التواصل معي. استشارة واحدة ممكن تريحك وتطمنك على صحة حيوانك</p>
-        <p class="text-white/80 text-lg mb-8 max-w-2xl mx-auto en-only hidden">Don't hesitate to reach out. One consultation can give you peace of mind about your pet's health</p>
-        <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="https://wa.me/201210254572" target="_blank" class="bg-green-500 hover:bg-green-400 text-white font-bold px-10 py-5 rounded-2xl text-xl transition-all transform hover:scale-105 shadow-2xl inline-flex items-center justify-center gap-3">
-                <i class="fa-brands fa-whatsapp text-2xl"></i>
-                <span class="ar-only">تواصل على واتساب</span>
-                <span class="en-only hidden">Chat on WhatsApp</span>
-            </a>
-            <a href="tel:+201210254572" class="bg-white/15 hover:bg-white/25 text-white font-bold px-10 py-5 rounded-2xl text-xl transition-all border-2 border-white/30 inline-flex items-center justify-center gap-3">
-                <i class="fa-solid fa-phone"></i>
-                <span class="ar-only">اتصل بي</span>
-                <span class="en-only hidden">Call Me</span>
-            </a>
-        </div>
+        <div class="text-6xl mb-6">🐾</div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-6 ar-only">حيوانك يستحق أفضل رعاية</h2><h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-6 en-only">Your Pet Deserves the Best</h2>
+        <p class="text-white/80 text-lg mb-8 max-w-2xl mx-auto ar-only">استشارة واحدة ممكن تطمنك على صحة حيوانك</p><p class="text-white/80 text-lg mb-8 max-w-2xl mx-auto en-only">One consultation can give you peace of mind</p>
+        <a href="https://wa.me/201210254572" class="bg-green-500 hover:bg-green-400 text-white font-bold px-10 py-5 rounded-2xl text-xl transition-all shadow-2xl inline-flex items-center gap-3">
+            <i class="fa-brands fa-whatsapp text-2xl"></i><span class="ar-only">تواصل على واتساب</span><span class="en-only">Chat on WhatsApp</span>
+        </a>
     </div>
 </section>
 
-<!-- ============ FOOTER ============ -->
+<!-- FOOTER -->
 <footer class="bg-gray-900 text-white py-12">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
-            <div>
-                <div class="flex items-center gap-3 mb-4">
-                    <div class="w-10 h-10 bg-vet-600 rounded-xl flex items-center justify-center text-white font-bold text-xl">🐾</div>
-                    <span class="font-extrabold text-xl">د. أحمد أباظة</span>
-                </div>
-                <p class="text-gray-400 ar-only">استشارات بيطرية أونلاين — رعاية حيوانك من منزلك</p>
-                <p class="text-gray-400 en-only hidden">Online Veterinary Consultations — Care for your pet from home</p>
-            </div>
-            <div>
-                <h4 class="font-extrabold text-white mb-4 ar-only">روابط سريعة</h4>
-                <h4 class="font-extrabold text-white mb-4 en-only hidden">Quick Links</h4>
-                <div class="space-y-2">
-                    <a href="#home" class="block text-gray-400 hover:text-vet-400 transition-colors ar-only">الرئيسية</a>
-                    <a href="#home" class="block text-gray-400 hover:text-vet-400 transition-colors en-only hidden">Home</a>
-                    <a href="#services" class="block text-gray-400 hover:text-vet-400 transition-colors ar-only">الخدمات</a>
-                    <a href="#services" class="block text-gray-400 hover:text-vet-400 transition-colors en-only hidden">Services</a>
-                    <a href="#payment" class="block text-gray-400 hover:text-vet-400 transition-colors ar-only">طرق الدفع</a>
-                    <a href="#payment" class="block text-gray-400 hover:text-vet-400 transition-colors en-only hidden">Payment</a>
-                </div>
-            </div>
-            <div>
-                <h4 class="font-extrabold text-white mb-4 ar-only">تواصل معي</h4>
-                <h4 class="font-extrabold text-white mb-4 en-only hidden">Contact</h4>
-                <div class="space-y-2 text-gray-400">
-                    <p><i class="fa-brands fa-whatsapp ml-2 text-green-400"></i> 01210254572</p>
-                    <p><i class="fa-solid fa-envelope ml-2"></i> <span class="ar-only">قريباً</span><span class="en-only hidden">Coming soon</span></p>
-                </div>
-            </div>
-        </div>
-        <div class="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
-            <p class="ar-only">© 2026 د. أحمد أباظة. جميع الحقوق محفوظة.</p>
-            <p class="en-only hidden">© 2026 Dr. Ahmed Abaza. All rights reserved.</p>
-        </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <p class="text-xl font-extrabold mb-2">🐾 د. أحمد أباظة</p>
+        <p class="text-gray-400 mb-4 ar-only">استشارات بيطرية أونلاين — رعاية حيوانك من منزلك</p><p class="text-gray-400 mb-4 en-only">Online Veterinary Consultations</p>
+        <p class="text-gray-500 text-sm ar-only">© 2026 جميع الحقوق محفوظة</p><p class="text-gray-500 text-sm en-only">© 2026 All rights reserved</p>
     </div>
 </footer>
 
-<!-- ============ SCRIPTS ============ -->
+<!-- FLOATING WHATSAPP -->
+<div class="whatsapp-float">
+    <a href="https://wa.me/201210254572" target="_blank" title="WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+</div>
+
 <script>
     let currentLang = 'ar';
-
     function toggleLang() {
         const html = document.documentElement;
-        if (currentLang === 'ar') {
-            html.lang = 'en';
-            html.dir = 'ltr';
-            currentLang = 'en';
-            document.getElementById('lang-label').textContent = 'العربية';
-            const mobLabel = document.getElementById('lang-label-mob');
-            if (mobLabel) mobLabel.textContent = 'العربية';
-        } else {
-            html.lang = 'ar';
-            html.dir = 'rtl';
-            currentLang = 'ar';
-            document.getElementById('lang-label').textContent = 'English';
-            const mobLabel = document.getElementById('lang-label-mob');
-            if (mobLabel) mobLabel.textContent = 'English';
-        }
+        if (currentLang === 'ar') { html.lang = 'en'; html.dir = 'ltr'; currentLang = 'en'; document.getElementById('lang-label').textContent = 'العربية'; const m = document.getElementById('lang-label-mob'); if(m) m.textContent = 'العربية'; }
+        else { html.lang = 'ar'; html.dir = 'rtl'; currentLang = 'ar'; document.getElementById('lang-label').textContent = 'English'; const m = document.getElementById('lang-label-mob'); if(m) m.textContent = 'English'; }
     }
-
-    function toggleMobile() {
-        const menu = document.getElementById('mobile-menu');
-        menu.classList.toggle('hidden');
-    }
-
+    function toggleMobile() { document.getElementById('mobile-menu').classList.toggle('hidden'); }
     function handleSubmit(e) {
         e.preventDefault();
-        const form = document.getElementById('consult-form');
-        const name = form.querySelector('input[type="text"]').value;
-        const phone = form.querySelector('input[type="tel"]').value;
-        const petType = form.querySelector('select').value;
-        const desc = form.querySelector('textarea').value;
-        
-        const message = currentLang === 'ar' 
-            ? `مرحباً د. أحمد،\n\nالاسم: ${name}\nرقم الهاتف: ${phone}\nنوع الحيوان: ${petType}\n\nوصف الحالة:\n${desc}`
-            : `Hello Dr. Ahmed,\n\nName: ${name}\nPhone: ${phone}\nPet Type: ${petType}\n\nCondition Description:\n${desc}`;
-        
-        const encoded = encodeURIComponent(message);
-        window.open(`https://wa.me/201210254572?text=${encoded}`, '_blank');
+        const f = document.getElementById('consult-form');
+        const name = f.querySelector('input[type=text]').value;
+        const phone = f.querySelector('input[type=tel]').value;
+        const pet = f.querySelector('select').value;
+        const desc = f.querySelector('textarea').value;
+        const msg = currentLang === 'ar' ? `مرحباً د. أحمد،\n\nالاسم: ${name}\nالهاتف: ${phone}\nالحيوان: ${pet}\n\nالوصف:\n${desc}` : `Hello Dr. Ahmed,\n\nName: ${name}\nPhone: ${phone}\nPet: ${pet}\n\nDescription:\n${desc}`;
+        window.open(`https://wa.me/201210254572?text=${encodeURIComponent(msg)}`, '_blank');
     }
-
-    // Navbar scroll effect
-    window.addEventListener('scroll', () => {
-        const navbar = document.getElementById('navbar');
-        if (window.scrollY > 20) {
-            navbar.classList.add('shadow-lg');
-        } else {
-            navbar.classList.remove('shadow-lg');
-        }
-    });
+    window.addEventListener('scroll', () => { const n = document.getElementById('navbar'); if(window.scrollY > 20) n.classList.add('shadow-lg'); else n.classList.remove('shadow-lg'); });
 </script>
-
 </body>
 </html>
